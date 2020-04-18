@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Telegram Desktop
+Comment=Fast and secure desktop app, perfectly synced with your mobile phone.
+Exec=AppRun %U
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=icon
+Categories=Network;Office;
+StartupWMClass=Telegram
+StartupNotify=true
