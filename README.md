@@ -1,2 +1,1 @@
 # Telegram.AppImage
-# Telegram.AppImage
