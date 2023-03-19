@@ -17,8 +17,12 @@ ENV TOKEN=${TOKEN}
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 ENV DEBIAN_FRONTEND=noninteractive 
 
-RUN apt-get -y update && apt-get -y install apt-utils
-RUN apt-get -y update && apt-get -y upgrade
-RUN apt-get install -y kmod make gcc wget xz-utils 
-RUN apt-get install -y fuse
-RUN apt-get install -y file
+RUN apt-get update -y --fix-missing  && \
+    apt-get install -y apt-utils
+
+RUN apt-get update -y  && \
+    apt-get upgrade -y 
+
+RUN apt-get install -y kmod make gcc wget xz-utils  && \
+    apt-get install -y fuse && \
+    apt-get install -y file
